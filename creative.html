@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Uniwing — Project Details</title>
+	<meta name="description" content="Uniwing admissions mentoring platform project details." />
+	<style>
+		:root {
+			--bg: #ffffff;
+			--fg: #0f172a;
+			--sub: #475569;
+			--line: #e2e8f0;
+			--chip: #f1f5f9;
+		}
+		body {
+			margin: 0;
+			font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto;
+			background: var(--bg);
+			color: var(--fg);
+		}
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+		.wrap {
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 24px;
+		}
+		header {
+			position: sticky;
+			top: 0;
+			background: #fff;
+			border-bottom: 1px solid var(--line);
+			padding: 12px 0;
+			z-index: 1000;
+		}
+		.title {
+			font-weight: 700;
+			font-size: 18px;
+		}
+		.muted {
+			color: var(--sub);
+		}
+		img {
+			max-width: 100%;
+			border-radius: 12px;
+			border: 1px solid var(--line);
+			margin-bottom: 18px;
+		}
+		h1 {
+			font-size: 26px;
+			margin: 0 0 10px;
+		}
+		section {
+			border-top: 1px solid var(--line);
+			padding-top: 20px;
+			margin-top: 20px;
+		}
+
+        .help-grid {
+            width: 100%;
+            aspect-ratio: 1/1; 
+            object-fit: cover; 
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+
+        .help-grid:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+	</style>
+</head>
+<body>
+	<header>
+		<div class="wrap" style="display:flex;align-items:center;justify-content:space-between;">
+			<a class="title" href="MinHyukKim.html">← Back</a>
+			<span class="muted">Project Details</span>
+		</div>
+	</header>
+
+	<main class="wrap">
+		<h1>Yonsei–Nexon RC Creative Platform</h1>
+		<p class="muted">Developed Help You, a bus-boarding assistance program for the visually impaired.</p>
+
+		<section>
+			<h2 style="font-size:20px">My Role</h2>
+			<ul>
+				<li>Led the Help You team as the team leader.</li>
+				<li>Planned and completed the service as a PM (Project Manager).</li>
+			</ul>
+		</section>
+
+        <section>
+            <h2 style="font-size:20px">Activities</h2>
+        
+            <h3 style="font-size:18px;font-weight:600;margin-bottom:16px;">• Developed and presented the Help You service.</h3>
+            <div style="margin-left:20px;margin-bottom:30px;">
+                <img
+                    src="Help you.png"
+                    alt="Help you event"
+                    style="width:100%;max-width:700px;border-radius:12px;border:1px solid #e2e8f0;margin-bottom:6px;"
+                />
+			<div
+				style="
+					display:grid;
+					grid-template-columns: repeat(2, 1fr); 
+					gap:16px;
+					margin-bottom:30px;
+					"
+			>
+				<img src="버스발표.jpg" alt="Team photo 1" class="help-grid" />
+				<img src="버스.jpg" alt="Team photo 2" class="help-grid" />
+				<img src="Helpyou팀원.jpg" alt="Team photo 3" class="help-grid" />
+				<img src="시각장애인.jpg" alt="Team photo 4" class="help-grid" />
+			</div>	
+            </div>
+        </section>
+	</main>
+</body>
+</html>

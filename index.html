@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minhyuk Kim — Personal Website</title>
+  <meta name="description" content="Business × AI/ML. Portfolio and contact." />
+  <style>
+    :root{--bg:#ffffff;--fg:#0f172a;--sub:#475569;--line:#e2e8f0;--chip:#f1f5f9}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+.wrap{max-width:960px;margin:0 auto;padding:24px}
+header{position:sticky;top:0;background:#fff; border-bottom:1px solid var(--line); z-index:1000;}  
+nav{display:flex;gap:16px;font-size:14px}
+.title{font-weight:700;font-size:18px}
+.hero{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;padding:28px 0}
+.avatar{width:200px;height:auto;border-radius:16px;border:1px solid var(--line)}
+h1{margin:0 0 6px;font-size:28px;line-height:1.2}
+.muted{color:var(--sub)}
+section{padding:26px 0;border-top:1px solid var(--line)}
+h2{margin:0 0 12px;font-size:22px}
+h3{margin:0;font-size:16px}
+.card{border:1px solid var(--line);border-radius:14px;padding:14px}
+.grid{display:grid;gap:14px}
+.grid.cols-2{grid-template-columns:repeat(2,1fr)}
+.list{margin:10px 0 0;padding-left:20px}
+.list li{margin:4px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chip{padding:6px 10px;border-radius:10px;background:var(--chip);font-size:13px}
+footer{border-top:1px solid var(--line);padding:20px 0;color:var(--sub);font-size:14px;text-align:center}
+@media (max-width:720px){.hero{grid-template-columns:1fr}.avatar{width:80px;height:80px}}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--line);border-radius:10px;font-size:14px}
+
+:root{--shadow-sm:0 1px 2px rgba(15,23,42,.06);--shadow-md:0 8px 24px rgba(15,23,42,.12)}
+@media (prefers-color-scheme:dark){
+  :root{--shadow-sm:0 1px 2px rgba(0,0,0,.35);--shadow-md:0 10px 28px rgba(0,0,0,.55)}
+}
+.card,.btn{box-shadow:var(--shadow-sm);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;will-change:transform,box-shadow}
+.card:hover,.btn:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
+.card:active,.btn:active{transform:translateY(-1px)}
+.card:focus-visible,.btn:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.card,.btn{transition:none}}
+.card img{width:100%; aspect-ratio:16/9; object-fit:contain; background:#fff; border-radius:10px;} 
+.card{ display:flex; flex-direction:column }
+.card h3{ margin:10px 0 6px }
+.card p.muted{ margin:0 0 10px }
+.card > :last-child{ margin-top:auto }
+.card h3 {
+  margin: 20px 0 10px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;height:56px;">
+      <a class="title" href="#top">Minhyuk Kim</a>
+    </div>
+  </header>
+
+  <main class="wrap" id="top">
+    
+    <div class="hero">
+      <img class="avatar" src="me.jpg" alt="Profile"/>
+      <div>
+        <h1>Minhyuk Kim</h1>
+        <p class="muted">I'm Minhyuk Kim, a sophomore in Business Administration at Yonsei University, aiming to build companies that change the world.
+I'm passionate about predicting the future through data and creating meaningful impact through innovation.</p>
+        <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="mailto:mike0107@yonsei.ac.kr">Email</a>
+          <a class="btn" href="./cv.pdf" target="_blank" rel="noreferrer">View CV</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <section id="Education">
+  <h2>🎓 Education</h2>
+  <div class="card">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px;">
+      <h3>Yonsei University</h3>
+      <span class="muted">Feb 2024 – Present</span>
+    </div>
+    <p class="muted">B.B.A. in Business Administration</p>
+    <ul class="list">
+      <li>Coursework: School of Business — AI Convergence Intensive Program</li>
+      <li>GPA: 3.92 / 4.3</li>
+    </ul>
+  </div>
+</section>
+
+    <section id="Research Interests">
+      <h2>Research Interests</h2>
+  <div class="card">
+    <h3>Research Focus</h3>
+    <p class="muted">
+      My research focuses on developing intelligent agents that analyze real-world data and situations 
+      to predict multiple possible future scenarios and identify the most probable outcomes, 
+      integrating data analysis, predictive modeling, and probabilistic inference to enable 
+      decision-making under uncertainty.
+    </p>
+  </div>
+    </section>
+
+    <section id="Experience">
+      <h2>Experience</h2>
+      <div class="grid cols-2">
+        <a class="card" href="uniwing.html" style="display:block;text-decoration:none;color:inherit">
+          <img class="logo" src="Uniwing.png" alt="Uniwing logo">
+          <h3 style="margin-top:10px">Uniwing</h3>
+          <p class="muted">
+            Leading an admissions mentoring platform that connects high school students with university mentors.
+          </p>
+        </a>
+
+        <a class="card" href="kcc.html" style="display:block;text-decoration:none;color:inherit;">
+          <img src="KCC_logo.png" alt="KCC logo">
+          <h3 style="margin-top:10px">Korean Commercial-Economic Conference</h3>
+          <p class="muted">KCC is a student-led association for academic growth and networking.</p>
+        </a>
+      </div>
+
+    <div class="grid cols-2">
+      <a class="card" href="https://www.q-net.or.kr/crf005.do?id=crf00501&gSite=Q&gId=&jmCd=6921&jmNm=%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EB%8A%A5%EC%82%AC&jobSearch=N&gbnn=gbnSubtab2#" style="display:block;text-decoration:none;color:inherit;">
+        <img src="국가기술자격증.webp" alt="Project screenshot">
+        <h3 style="margin-top:10px">Certified Information Processing Technician</h3>
+        <p class="muted">Possess foundational skills in programming, database management, and system design.</p>
+      </a>
+
+      <a class="card" href="creative.html" style="display:block;text-decoration:none;color:inherit;">
+        <img src="창의플랫폼.png" alt="Project screenshot">
+        <h3 style="margin-top:10px">Yonsei–Nexon RC Creative Platform</h3>
+        <p class="muted">Developed Help You, a bus-boarding assistance program for the visually impaired.</p>
+      </a>
+    </div>
+    </section>
+
+    
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">Python</span><span class="chip">R</span><span class="chip">HTML(basic)</span>
+        <span class="chip">Linux(basic)</span><span class="chip">Figma</span><span class="chip">CapCut</span>
+      </div>
+    </section>
+
+    
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p class="muted">You can contact me through the email button in the introduction or via the email address below.</p>
+        <p style="margin-top:6px"><a href="mailto:mike0107@yonsei.ac.kr">mike0107@yonsei.ac.kr</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Minhyuk Kim, a future leader who will change the world. Built with HTML & CSS.</footer>
+  <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</body>
+</html>

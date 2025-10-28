@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Uniwing — Project Details</title>
+	<meta name="description" content="Uniwing admissions mentoring platform project details." />
+	<style>
+		:root {
+			--bg: #ffffff;
+			--fg: #0f172a;
+			--sub: #475569;
+			--line: #e2e8f0;
+			--chip: #f1f5f9;
+		}
+		body {
+			margin: 0;
+			font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto;
+			background: var(--bg);
+			color: var(--fg);
+		}
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+		.wrap {
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 24px;
+		}
+		header {
+			position: sticky;
+			top: 0;
+			background: #fff;
+			border-bottom: 1px solid var(--line);
+			padding: 12px 0;
+			z-index: 1000;
+		}
+		.title {
+			font-weight: 700;
+			font-size: 18px;
+		}
+		.muted {
+			color: var(--sub);
+		}
+		img {
+			max-width: 100%;
+			border-radius: 12px;
+			border: 1px solid var(--line);
+			margin-bottom: 18px;
+		}
+		h1 {
+			font-size: 26px;
+			margin: 0 0 10px;
+		}
+		section {
+			border-top: 1px solid var(--line);
+			padding-top: 20px;
+			margin-top: 20px;
+		}
+
+		.square-img:hover {
+			transform: translateY(-4px) scale(1.02);
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+		}
+        .mk-clickable {
+            cursor: pointer; 
+            transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+        }
+
+        .mk-clickable:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+			filter: brightness(1.05); 
+        }
+        
+	</style>
+</head>
+<body>
+	<header>
+		<div class="wrap" style="display:flex;align-items:center;justify-content:space-between;">
+			<a class="title" href="MinHyukKim.html">← Back</a>
+			<span class="muted">Project Details</span>
+		</div>
+	</header>
+
+	<main class="wrap">
+		<h1>YKCC-Yonsei University Korean Commercial-Economic Conference</h1>
+		<p class="muted">I am a 57th-term member of the Yonsei University chapter.</p>
+        <span class="muted"> Advisor: Prof.<a href="https://ysb.yonsei.ac.kr/faculty.asp?mid=m02&sOpt=&uid=95" target="_blank" rel="noreferrer" style="color:#0066cc;text-decoration:underline;">Daehee Yoon</a></span>
+
+        <section>
+            <h2 style="font-size:20px">Activities</h2>
+        
+            <h3 style="font-size:18px;font-weight:600;margin-bottom:16px;">• Conducted a collaborative marketing project with Keychron, a Bluetooth keyboard brand, and Reborn, a subsidiary of KT M&S.</h3>
+            <div style="margin-left:20px;margin-bottom:30px;">
+            <div
+				style="
+					display:grid;
+					grid-template-columns: repeat(2, 1fr); 
+					gap:16px;
+					margin-bottom:30px;
+					"
+			>
+                <img
+                    src="Reborn_logo.png"
+                    alt="reborn"
+                    style="width:100%;max-width:700px;border-radius:12px;border:1px solid #e2e8f0;margin-bottom:6px;"
+                />
+                <img
+                    src="Keychrom_company.png"
+                    alt="reborn"
+                    style="width:100%;max-width:700px;border-radius:12px;border:1px solid #e2e8f0;margin-bottom:6px;"
+                />
+
+            </div>
+			<div
+				style="
+					display:grid;
+					grid-template-columns: repeat(2, 1fr); 
+					gap:16px;
+					margin-bottom:30px;
+					"
+			>
+				<video class="square-img" autoplay muted loop playsinline>
+                    <source src="Reb_vid.mp4" type="video/mp4" />
+                </video>
+	
+                <video class="square-img" autoplay muted loop playsinline>
+                    <source src="Key_vid.mp4" type="video/mp4" />
+                </video>
+			</div>	
+            </div>
+        
+			<h3 style="font-size:18px;font-weight:600;margin-top:80px;margin-bottom:16px;">• Activities as a supporter for Maeil Business Newspaper (MK)</h3>
+            <div style="margin-left:20px;margin-bottom:30px;">
+                <img
+                    src="MK_logo.jpg"
+                    alt="Mentoring event"
+                    style="width:100%;max-width:700px;border-radius:12px;border:1px solid #e2e8f0;margin-bottom:6px;"
+                />
+			<div
+				style="
+					display:grid;
+					grid-template-columns: repeat(2, 1fr); 
+					gap:16px;
+					margin-bottom:30px;
+					"
+			>
+				<a href="https://blog.naver.com/uniwing_123/224029956158" target="_blank" rel="noreferrer">
+                    <img src="MK_1.jpg" alt="Team photo 1" class="square-img mk-clickable" />
+                </a>
+                <a href="https://blog.naver.com/uniwing_123/224029962449" target="_blank" rel="noreferrer">
+                    <img src="MK_2.jpg" alt="Team photo 2" class="square-img mk-clickable" />
+                </a>
+			</div>	
+            </div>
+        </section>
+	</main>
+</body>
+</html>
